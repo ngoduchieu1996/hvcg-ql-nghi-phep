@@ -1,0 +1,19 @@
+@keyframes bounceUp {
+  from {
+    transform: translateX(5rem);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleOut {
+  from {
+    transform: translate(-50%, -50%) scale(0.2);
+  }
+
+  to {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
