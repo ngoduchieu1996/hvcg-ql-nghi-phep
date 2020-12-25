@@ -15218,7 +15218,7 @@ body {
   height: 100vh;
   position: fixed;
   z-index: 80;
-  top: 5.75rem;
+  /* top: 5.75rem; */
   left: 0;
   background-color: white;
   transition: all 0.5s;
@@ -15245,7 +15245,7 @@ body {
 .sidenav a.show-menu {
   position: relative;
 }
-.sidenav a.show-menu::before {
+/* .sidenav a.show-menu::before {
   content: "";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -15254,7 +15254,7 @@ body {
   position: absolute;
   transform: translateY(-50%);
   display: none;
-}
+} */
 .sidenav a.back {
   padding-left: 1.6rem;
   display: flex;
@@ -15338,6 +15338,10 @@ body {
   width: 2rem;
   height: 2rem;
   margin-right: 1.5rem;
+}
+
+.logo > a > img{
+  max-height: 50px;
 }
 
 .side_title {
