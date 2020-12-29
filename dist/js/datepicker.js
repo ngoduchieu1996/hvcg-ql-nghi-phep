@@ -1,5 +1,9 @@
 $(".date-picker").datepicker();
-
+$('.month-picker').datepicker({
+  format: 'mm/yyyy',
+  viewMode:1,
+  minViewMode:1,
+}); 
 function openForm() {
   let isOpen = false;
   $("#open-add-form").click(function () {
@@ -14,6 +18,7 @@ function openForm() {
     }
   });
 }
+
 
 openForm();
 

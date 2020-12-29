@@ -14742,20 +14742,25 @@ body {
   box-shadow: none !important;
   font-family: "Roboto", sans-serif !important;
 }
-.datepicker.datepicker-orient-top .datepicker-days {
+.datepicker.datepicker-orient-top .datepicker-days,
+.datepicker.datepicker-orient-top .datepicker-months {
   margin-top: 1rem;
 }
-.datepicker.datepicker-orient-bottom .datepicker-days {
+.datepicker.datepicker-orient-bottom .datepicker-days,
+.datepicker.datepicker-orient-bottom .datepicker-months {
   margin-bottom: 1rem;
 }
-.datepicker-days {
+.datepicker-days,
+.datepicker-months {
   background-color: #fff;
   border: 0.1rem solid #ccc;
   box-shadow: 0 0 0.3rem #ccc;
   border-radius: 0.4rem;
 }
 .datepicker th,
-.datepicker td {
+.datepicker td,
+.datepicker-months th,
+.datepicker-months td {
   padding: 0.8rem 1rem !important;
   width: 3rem;
   height: 3rem;
@@ -15218,7 +15223,7 @@ body {
   height: 100vh;
   position: fixed;
   z-index: 80;
-  /* top: 5.75rem; */
+  top: 5.75rem;
   left: 0;
   background-color: white;
   transition: all 0.5s;
@@ -15340,7 +15345,7 @@ body {
   margin-right: 1.5rem;
 }
 .logo img {
-  height: 50px;
+  height: 2.55rem;
 }
 .side_title {
   background-color: #eaeaea;
@@ -16317,9 +16322,7 @@ body#phieuxuatkho-page .table-phieuxuatkho td:nth-last-child(2) {
 .form-dang-ky .detail-reason{
   height: 10rem;
 }
-.btn{
-  margin-right: 3rem;
-}
+
 .form-dang-ky .form-button{
   width: 20%;
 }
