@@ -15245,7 +15245,7 @@ body {
 .sidenav a.show-menu {
   position: relative;
 }
-/* .sidenav a.show-menu::before {
+.sidenav a.show-menu::before {
   content: "";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -15254,7 +15254,7 @@ body {
   position: absolute;
   transform: translateY(-50%);
   display: none;
-} */
+}
 .sidenav a.back {
   padding-left: 1.6rem;
   display: flex;
@@ -15339,11 +15339,9 @@ body {
   height: 2rem;
   margin-right: 1.5rem;
 }
-
-.logo > a > img{
-  max-height: 50px;
+.logo img {
+  height: 50px;
 }
-
 .side_title {
   background-color: #eaeaea;
 }
@@ -15414,6 +15412,17 @@ body {
   background-image: linear-gradient(to right, #fd746c 0%, #ff9068 51%, #fd746c 100%);
   color: #fff;
   box-shadow: 0 0.3rem 0.3rem #ff9068;
+}
+.btn-green {
+  background-image: linear-gradient(to right, #1D976C 0%, #93F9B9  51%, #1D976C  100%);
+  color: #fff;
+  box-shadow: 0 0.3rem 0.3rem #1D976C;
+}
+
+.btn-orange {
+  background-image: linear-gradient(to right, #FF8008 0%, #FFC837  51%, #FF8008  100%);
+  color: #fff;
+  box-shadow: 0 0.3rem 0.3rem #FF8008;
 }
 
 .btn-function {
@@ -16346,9 +16355,4 @@ body#phieuxuatkho-page .table-phieuxuatkho td:nth-last-child(2) {
     overflow: hidden;
   }
 }
-/* .chose-date:after{
-  content: "\f133";
-  font-family: 'Font Awesome 5 free';
-  margin-left: 1rem;
-} */
 /*# sourceMappingURL=style.css.map */
