@@ -1,8 +1,12 @@
-$(".date-picker").datepicker();
+$(".date-picker").datepicker({
+  format: 'dd/mm/yyyy',
+  autoclose:true
+});
 $('.month-picker').datepicker({
   format: 'mm/yyyy',
   viewMode:1,
   minViewMode:1,
+  autoclose:true
 }); 
 function openForm() {
   let isOpen = false;

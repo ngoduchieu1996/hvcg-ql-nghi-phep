@@ -30,29 +30,10 @@
       <div class="nav-bar__menu hide-for-tablet">
         <div class="block">
           <div class="nav-bar__title">
-            <h1 style="text-transform: uppercase;">Công ty TNHH học với chuyên gia</h1>
+            <h1 style="text-transform: uppercase;">Hệ thống quản lý ngày phép</h1>
           </div>
 
           <div class="nav-bar__cta d-flex align-center">
-            <div class="position-relative">
-              <span title="Thông báo" id="nav-notification" class="nav-bar__cta-has-sub">
-                <div class="noti-counter"><span class="noti-counter-inner">1</span></div>
-                <i class="far fa-bell fa-2x"></i>
-              </span>
-
-              <div class="notification-inner nav-bar__cta-sub">
-                <div class="notification-inner__block">
-                  <div class="notification-note fz-14">
-                    <span class="fw-6">Thông báo</span>
-                    <span class="fz-10 t-blue">Đánh dấu tất cả đã đọc</span>
-                  </div>
-
-                  <div class="show-more-notification text-center">
-                    <a class="fz-16 fw-6 t-d-grey" href="#">Xem thêm</a>
-                  </div>
-                </div>
-              </div>
-            </div>
             <figure class="user-logo">
               <span class="nav-bar__cta-has-sub" title="Tài khoản">
                 <img src="../../asset/default_usr.png" alt="logo user" />
@@ -122,7 +103,7 @@
                         </div>
       
                         <div class="form-item">
-                          <label for="from-date">Tháng</label>
+                          <label>Tháng</label>
                           <input
                             class="form-control month-picker"
                             type="text"
@@ -132,14 +113,13 @@
                           />
                         </div>
                         <div class="form-item">
-                            <label for="end-date">Tài khoản</label>
+                            <label>Tài khoản</label>
                             <select class="form-control" name="">
                               <option value="Tất cả" selected>Tất cả</option>
                             </select>
                           </div>
                         <div class="form-item">
                           <button class="btn btn-blue mr-5">Tìm kiếm</button>
-                          <button class="btn btn-green mr-5">Lưu</button>
                           <button class="btn btn-orange">Báo cáo</button>
                         </div>
                       </div>
@@ -148,12 +128,16 @@
       
                   <div class="right-form">
                     <div class="form-item">
-                        <label for="end-date">Tháng</label>
+                      <button class="btn btn-green mr-5">Lưu</button>
+                    </div>
+                    <div class="form-item">
+                        <label>Tháng</label>
                         <input
                           class="form-control"
                           type="text"
                           name=""
                           id="month-selected"
+                          value="12/2020"
                           disabled
                         />
                       </div>

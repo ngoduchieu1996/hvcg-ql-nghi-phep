@@ -14646,7 +14646,7 @@ i {
 body {
   background-color: #f2f3f8;
   font-family: "Roboto Condensed", sans-serif;
-  min-height: 101vh;
+  min-height: 100vh;
 }
 
 .t-white {
@@ -16358,4 +16358,5 @@ body#phieuxuatkho-page .table-phieuxuatkho td:nth-last-child(2) {
     overflow: hidden;
   }
 }
+
 /*# sourceMappingURL=style.css.map */
