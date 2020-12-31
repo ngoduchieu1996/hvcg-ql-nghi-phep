@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản lý điểm danh</title>
+
+    <!-- Css -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../lib/css/datepicker.css" />
+
+    <link rel="stylesheet" href="../../font/fontawesome-free-5.14.0-web/css/all.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+  </head>
+  <body id="admin-index-page">
+    <nav class="nav-bar t-white">
+        <button id="open-side-bar">
+            <i class="fas fa-bars t-white"></i>
+        </button>
+        <div class="logo fz-26 fw-7 text-upper">
+            <a href="#"><img src="../../asset/hvcg-soft.png"></a>
+        </div>
+      <div class="nav-bar__menu hide-for-tablet">
+        <div class="block">
+          <div class="nav-bar__title">
+            <h1 style="text-transform: uppercase;">Hệ thống quản lý ngày phép</h1>
+          </div>
+
+          <div class="nav-bar__cta d-flex align-center">
+            <figure class="user-logo">
+              <span class="nav-bar__cta-has-sub" title="Tài khoản">
+                <img src="../../asset/default_usr.png" alt="logo user" />
+                <p class="fz-12 fw-5">Admin</p>
+              </span>
+
+              <div class="user-logo__control nav-bar__cta-sub">
+                <ul class="user-logo__control-list">
+                  <li>
+                    <i class="fas fa-sign-out-alt"></i>
+                    <a href="#">Đăng xuất</a>
+                  </li>
+                </ul>
+              </div>
+            </figure>
+          </div>
+        </div>
+      </div>
+
+      <button id="show-nav-bar" class="show-for-tablet t-white">
+        <i class="fas fa-ellipsis-h"></i>
+      </button>
+    </nav>
+
+    <div id="filter" class="filter"></div>
+
+    <div class="sidenav sidebar-hover" id="side-bar">
+      <ul class="side-nav__menu">
+        <li class="active">
+          <a href="./index.html" class="show-menu"
+            ><span class="icon-menu"><i class="fas fa-home"></i></span>
+            <span class="show-on-hover">Quản lý nghỉ phép</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="../admin/quanlytaikhoan.html" class="show-menu"
+            ><span class="icon-menu"><i class="fas fa-tag"></i></span>
+            <span class="show-on-hover">Quản lý tài khoản</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="../admin/quanlytaikhoan.html" class="show-menu"
+            ><span class="icon-menu"><i class="fas fa-tag"></i></span>
+            <span class="show-on-hover">Quản lý điểm danh</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <main id="quanly-diemanh">
+      <div class="page-container">
+        <div class="bread-cumb">
+          <h1 class="manage-page-title">Quản lý điểm danh</h1>
+        </div>
+        <div class="baocaodiemdanh-list">
+            <div class="baocaodiemdanh-list-title text-center mb-30">
+                <h3>Báo cáo điểm danh</h3>
+            </div> 
+            <div class="control-bar">
+                <div class="d-flex-bw">
+                  <div class="left-form">
+                    <form action="" class="h-10">
+                      <div class="d-flex h-10">
+                        <div class="form-item">
+                        </div>
+      
+                        <div class="form-item">
+                          <label>Tháng</label>
+                          <input
+                            class="form-control date-input date-picker"
+                            type="text"
+                            data-provide="datepicker"
+                            name=""
+                            id="from-date"
+                          />
+                        </div>                        
+                        <div class="form-item">
+                          <button class="btn btn-blue mr-5">Tìm kiếm</button>
+                          <button class="btn btn-green">Export excel</button>
+                        </div>
+                      </div>
+                    </form>                    
+                  </div>
+                  <div class="mid-form-staff d-flex-bw d-flex-bw-mobile">
+                    <div class="form-item ml-20 ml-sm-0">
+                      <label>Tổng:</label>
+                      <input
+                            class="form-control mb-sm-10"
+                            type="text"
+                            id="sum-of-month"
+                            readonly
+                          />
+                    </div>
+                    <div class="form-item ml-20 ml-sm-0 ml-sm-0">
+                      <label>Số ngày đi muộn:</label>
+                      <input
+                            class="form-control mb-sm-10"
+                            type="text"
+                            id="sum-come-in-late-of-month"
+                            readonly
+                          />
+                    </div>
+                    <div class="form-item ml-20 ml-sm-0">
+                      <label>Số ngày về sớm:</label>
+                      <input
+                            class="form-control mb-sm-10"
+                            type="text"
+                            id="sum-come-back-soon-of-month"
+                            readonly
+                          />
+                    </div>
+                    <div class="form-item ml-sm-0 ml-20">
+                      <label>Tháng</label>
+                      <input
+                        class="form-control mb-sm-10"
+                        type="text"
+                        name=""
+                        id="month-selected"
+                        disabled
+                      />
+                    </div>
+                  </div>                  
+                  <div class="right-form">
+                    
+                  </div>
+                </div>           
+              </div>
+              <div class="main-table table-thong-ke">
+                <div class="table-wrapper"> 
+                  <div class="table-content">
+                    <table class="w-10 text-center table-roll-report-staff">
+                      <thead>
+                        <tr>
+                          <th class="sort">Ngày <i class="fas fa-sort-up ml-5"></i></th>
+      
+                          <th>Ngày đi muộn</th>
+      
+                          <th>Ngày về sớm</th>
+      
+                        </tr>
+                      </thead>
+      
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td><input type="checkbox" id="come-in-late" value="" disabled></td>
+                          <td><input type="checkbox" id="come-back-soon" value="" disabled></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+        </div> 
+      </div>
+    </main>
+
+    <script src="../../lib/jquery-3.5.1.min.js"></script>
+    <script src="../../lib/js/bootstrap-datepicker.js"></script>
+    <script src="../../js/datepicker.js"></script>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/nav.js"></script>
+  </body>
+</html>
