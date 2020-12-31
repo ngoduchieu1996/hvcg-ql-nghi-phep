@@ -11843,6 +11843,20 @@ i {
   }
 }
 @media (max-width: 575px) {
+  .mb-sm-0 {
+    margin-bottom: 0rem;
+  }
+
+  .mt-sm-0 {
+    margin-top: 0rem;
+  }
+
+  .ml-sm-0 {
+    margin-left: 0rem;
+  }
+  .mr-sm-0 {
+    margin-right: 0rem;
+  }
   .mb-sm-1 {
     margin-bottom: 0.1rem;
   }
@@ -16332,6 +16346,11 @@ body#phieuxuatkho-page .table-phieuxuatkho td:nth-last-child(2) {
 .require{
   color: red;
 }
+.d-flex-ar{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 @media(max-width: 720px){
   .form-dang-ky>form>div{
     width: 75%;
@@ -16356,6 +16375,21 @@ body#phieuxuatkho-page .table-phieuxuatkho td:nth-last-child(2) {
   .form-dang-ky option{
     max-width: 100%;
     overflow: hidden;
+  }
+  .mid-form-staff label, .mid-form-staff input{
+    display: block;
+  }
+  .d-flex-bw-mobile{
+    padding: 1%;
+  }
+  .table-roll-report-staff{
+    width: 100% !important;
+  }
+  .table-roll-report-staff th{
+    width: 40%;
+  }
+  .table-roll-report-staff th:first-child{
+    width: 20%;
   }
 }
 
