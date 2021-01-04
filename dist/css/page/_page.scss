@@ -1,8 +1,14 @@
+@import "./allcss";
 @import "./login";
 @import "./index";
 
 @import "./phongkinhdoanh.scss";
 @import "./phongkehoach";
 
-@import "./kinhdoanh/kinhdoanh";
-@import "./quanlydsphieu/quanlydsphieu";
+// @import "./kinhdoanh/kinhdoanh";
+// @import "./quanlydsphieu/quanlydsphieu";
+
+
+@import "./staff/staff";
+
+@import "./admin/admin";

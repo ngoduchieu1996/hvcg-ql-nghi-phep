@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ĐƠN GIÁ BÁN</title>
+    <title>Quản lý điểm danh</title>
 
     <!-- Css -->
     <link
@@ -37,7 +37,7 @@
             <figure class="user-logo">
               <span class="nav-bar__cta-has-sub" title="Tài khoản">
                 <img src="../../asset/default_usr.png" alt="logo user" />
-                <p class="fz-12 fw-5">Admin</p>
+                <p class="fz-12 fw-5">Bảo vệ</p>
               </span>
 
               <div class="user-logo__control nav-bar__cta-sub">
@@ -53,37 +53,158 @@
         </div>
       </div>
 
-      <button id="show-nav-bar" class="show-for-tablet t-white d-none">
+      <button id="show-nav-bar" class="show-for-tablet t-white">
         <i class="fas fa-ellipsis-h"></i>
       </button>
     </nav>
 
     <div id="filter" class="filter"></div>
 
-    <div class="sidenav sidebar-hover d-none" id="side-bar">
+    <div class="sidenav sidebar-hover" id="side-bar">
       <ul class="side-nav__menu">
-        <li>
-          <a href="#" class="show-menu"
-            ><span class="icon-menu"><i class="fas fa-home"></i></span>
-            <span class="show-on-hover">Quản lý nghỉ phép</span>
-          </a>
-        </li>
-
         <li class="active">
-          <a href="#" class="show-menu"
-            ><span class="icon-menu"><i class="fas fa-tag"></i></span>
-            <span class="show-on-hover">Quản lý tài khoản</span>
+          <a href="./index.html" class="show-menu"
+            ><span class="icon-menu"><i class="fas fa-home"></i></span>
+            <span class="show-on-hover">Quản lý điểm danh</span>
           </a>
         </li>
-
       </ul>
     </div>
 
-    <main id="quanly-taikhoan">
+    <main id="quanly-diemanh">
       <div class="page-container">
         <div class="bread-cumb">
-          <h1 class="manage-page-title">Quản lý tài khoản</h1>
+          <h1 class="manage-page-title">Quản lý điểm danh</h1>
         </div>
+        <div class="baocaodiemdanh-list">
+            <div class="baocaodiemdanh-list-title text-center mb-30">
+                <h3>Danh sách điểm danh</h3>
+            </div> 
+            <div class="control-bar">
+                <div class="d-flex-bw">
+                  <div class="left-form">
+                    <form action="" class="h-10">
+                      <div class="d-flex h-10">
+                        <div class="form-item">
+                        </div>
+      
+                        <div class="form-item">
+                          <label>Tháng</label>
+                          <input
+                            class="form-control month-picker"
+                            type="text"
+                            data-provide="datepicker"
+                            name=""
+                            id="month"
+                          />
+                        </div>
+                        <div class="form-item">
+                            <label>Tài khoản</label>
+                            <select class="form-control" name="">
+                              <option value="Tất cả" selected>Tất cả</option>
+                            </select>
+                          </div>
+                        <div class="form-item">
+                          <button class="btn btn-blue mr-5">Tìm kiếm</button>
+                          <button class="btn btn-orange">Báo cáo</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+      
+                  <div class="right-form">
+                    <div class="form-item">
+                      <button class="btn btn-green mr-5">Lưu</button>
+                    </div>
+                    <div class="form-item">
+                        <label>Tháng</label>
+                        <input
+                          class="form-control"
+                          type="text"
+                          name=""
+                          id="month-selected"
+                          value="12/2020"
+                          disabled
+                        />
+                      </div>
+                  </div>
+                </div>           
+              </div>
+              <div class="main-table table-thong-ke">
+                <div class="table-wrapper"> 
+                  <div class="table-content">
+                    <table class="w-10 text-center">
+                      <thead>
+                        <tr>
+                          <th class="sort">STT <i class="fas fa-sort-up ml-5"></i></th>
+      
+                          <th>Họ và tên</th>
+      
+                          <th>Đi muộn</th>
+      
+                          <th>Về sớm</th>
+
+                          <th>Ghi chú</th>
+      
+                        </tr>
+                      </thead>
+      
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>
+                            Ngô Đức Hiếu 
+                          </td>
+                          <td class="text-center"><input type="checkbox" name="" id=""></td>
+                          <td class="text-center"><input type="checkbox" name="" id=""></td>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="table-pagination d-flex-bw align-center">
+                  <div class="table-pagination__title">
+                    <p>
+                      Hiển thị từ 1 đến <span class="render-number">20</span> trong
+                      <span class="total">844</span> bản ghi
+                    </p>
+                  </div>
+      
+                  <div class="table-pagination__control">
+                    <ul class="pagination">
+                      <li class="to-first-page disable">
+                        <span>Trang đầu</span>
+                      </li>
+      
+                      <li class="back disable">
+                        <span>&laquo;</span>
+                      </li>
+      
+                      <li class="page active">
+                        <a href="#">1</a>
+                      </li>
+      
+                      <li class="page">
+                        <a href="#">2</a>
+                      </li>
+      
+                      <li class="page">
+                        <a href="#">3</a>
+                      </li>
+      
+                      <li class="next">
+                        <span>&raquo;</span>
+                      </li>
+      
+                      <li class="to-last-page">
+                        <span>Trang cuối</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        </div> 
       </div>
     </main>
 

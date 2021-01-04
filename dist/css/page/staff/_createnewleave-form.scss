@@ -1,0 +1,73 @@
+.form-dang-ky label, .form-dang-ky input{
+    display: block;
+  }
+  .form-dang-ky label{
+    width: 30%;
+  }
+  .form-dang-ky>form>div{
+    margin: 1.5rem auto;
+    width: 50%
+  }
+  .form-dang-ky .request, .form-dang-ky .time, .form-dang-ky .reason, .form-dang-ky .detail-reason{
+    width: 70%;
+    resize: none;
+  }
+  .form-dang-ky .detail-reason{
+    height: 10rem;
+  }
+  
+  .form-dang-ky .form-button{
+    width: 20%;
+  }
+  .align-items-center{
+    align-items: center;
+  }
+  .require{
+    color: red;
+  }
+  .d-flex-ar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  @media(max-width: 720px){
+    .form-dang-ky>form>div{
+      width: 75%;
+    }
+    .flex-column-720{
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .form-dang-ky label{
+      width: 100%;
+    }
+    .form-dang-ky .request, .form-dang-ky .time, .form-dang-ky .reason, .form-dang-ky .detail-reason{
+      width: 100%;
+      resize: none;
+    }
+    .form-dang-ky .chose-date .format-date, .form-dang-ky .chose-date i{
+      display: none;
+    }
+    .form-dang-ky label{
+      margin-bottom: 0.5rem;
+    }
+    .form-dang-ky option{
+      max-width: 100%;
+      overflow: hidden;
+    }
+    .mid-form-staff label, .mid-form-staff input{
+      display: block;
+    }
+    .d-flex-bw-mobile{
+      padding: 1%;
+    }
+    .table-roll-report-staff{
+      width: 100% !important;
+    }
+    .table-roll-report-staff th{
+      width: 40%;
+    }
+    .table-roll-report-staff th:first-child{
+      width: 20%;
+    }
+  }

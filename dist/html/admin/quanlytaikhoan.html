@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ĐƠN GIÁ BÁN</title>
+    <title>Quản lý tài khoản</title>
 
     <!-- Css -->
     <link
@@ -63,27 +63,214 @@
     <div class="sidenav sidebar-hover" id="side-bar">
       <ul class="side-nav__menu">
         <li>
-          <a href="#" class="show-menu"
+          <a href="./index.html"
             ><span class="icon-menu"><i class="fas fa-home"></i></span>
             <span class="show-on-hover">Quản lý nghỉ phép</span>
           </a>
         </li>
 
         <li class="active">
-          <a href="#" class="show-menu"
+          <a href="./quanlytaikhoan.html"
             ><span class="icon-menu"><i class="fas fa-tag"></i></span>
             <span class="show-on-hover">Quản lý tài khoản</span>
           </a>
         </li>
-
+        <li>
+          <a href="./danhsachdiemdanh.html" 
+            ><span class="icon-menu"><i class="fas fa-tag"></i></span>
+            <span class="show-on-hover">Danh sách điểm danh</span>
+          </a>
+        </li>
       </ul>
     </div>
 
     <main id="quanly-taikhoan">
       <div class="page-container">
-        <div class="bread-cumb">
+        <div class="d-flex-center">
           <h1 class="manage-page-title">Quản lý tài khoản</h1>
         </div>
+        <div class="user-infomation mb-20">
+          <div class="user-infomation-title d-flex align-center">
+            <h3>Thông tin người dùng</h3>
+            <div id="form-message" class="ml-20"></div>
+          </div>
+          <div class="user-infomation-form d-flex-center mt-20">
+            <form action="" class="col-10">
+              <div class="d-flex-center">
+                <div class="form-item col-12 col-sm-6 d-flex-center align-center mb-20 px-20">
+                  <p class="col-12 col-sm-4 mb-sm-10">Tên đăng nhập:</p>
+                  <input type="text" class="form-control col-12 col-sm-8">
+                </div>
+                <div class="form-item col-12 col-sm-6 d-flex-center align-center mb-20 px-20">
+                  <p class="col-12 col-sm-4 mb-sm-10">Mật khẩu:</p>
+                  <input type="text" class="form-control col-12 col-sm-8">
+                </div>
+                <div class="form-item col-12 col-sm-6 d-flex-center align-center mb-20 px-20">
+                  <p class="col-12 col-sm-4 mb-sm-10">Họ tên:</p>
+                  <input type="text" class="form-control col-12 col-sm-8">
+                </div>
+                <div class="form-item col-12 col-sm-6 d-flex-center align-center mb-20 px-20">
+                  <p class="col-12 col-sm-4 mb-sm-10">Số điện thoại:</p>
+                  <input type="number" class="form-control clear-appear col-12 col-sm-8">
+                </div>
+                <div class="form-item col-12 col-sm-6 d-flex-center align-center mb-20 px-20">
+                  <p class="col-12 col-sm-4 mb-sm-10">Nhóm quyền:</p>
+                  <select class="form-control col-12 col-sm-8">
+                    <option value="admin">admin</option>
+                    <option value="staff">staff</option>
+                    <option value="guard">guard</option>
+                  </select>
+                </div>
+                <div class="form-item col-12 col-sm-6 d-flex-center align-center mb-20 px-20">
+                  <p class="col-12 col-sm-4 mb-sm-10">Email:</p>
+                  <input type="email" class="form-control col-12 col-sm-8">
+                </div>
+                <div class="form-item col-8 col-sm-5 col-lg-4 col-xl-3 d-flex-ar">
+                    <button class="btn-green btn">Thêm mới</button>
+                    <button class="btn-blue btn">Cập nhật</button>
+                    <button class="btn-danger btn">Hủy</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+        </div>
+        <div class="user-list mb-20">
+          <div class="control-bar">
+              <div class="d-flex-bw align-center">
+                <div class="left-form">
+                  <div class="user-list-title text-center">
+                    <h3>Danh sách người dùng</h3>
+                </div> 
+                </div>
+                <div class="right-form">
+                  <form action="">
+                    <div class="d-flex">
+                      <div class="form-item">
+                        <label>Họ tên</label>
+                        <input
+                          class="form-control mr-10"
+                          type="text"         
+                          name=""
+                        />
+                      </div>
+                      <div class="form-item">
+                        <button class="btn-blue btn">Tìm kiếm</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+    
+                
+              </div>           
+            </div>
+            <div class="main-table table-thong-ke">
+              <div class="table-wrapper"> 
+                <div class="table-content">
+                  <table class="w-10 text-center">
+                    <thead>
+                      <tr>
+                        <th>ID</th>
+    
+                        <th>Họ tên</th>
+    
+                        <th>Tên đăng nhập</th>
+    
+                        <th>Nhóm quyền</th>
+    
+                        <th>Số điện thoại</th>
+    
+                        <th>Email</th>
+    
+                        <th>Tác vụ</th>
+
+                      </tr>
+                    </thead>
+    
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>
+                          Ngô Đức Hiếu 
+                        </td>
+                        <td>HVCG_A_123</td>
+                        <td>admin</td>
+                        <td>0123456789</td>
+                        <td>a@gmail.com</td>
+                        <td class="btn-function d-flex-center align-items-center ">
+                          <div class="btn-function-edit">
+                            <button class="btn btn-edit">
+                              <i class="fas fa-edit"></i>
+                            </button>
+                          </div>
+                          <div class="btn-function-delete" onclick="showModal(this)">
+                            <button class="modal-toggle-delete btn-delete">
+                              <i class="fas fa-trash-alt"></i>
+                            </button>
+                            <div class="modal-delete">
+                              <div class="modal-overlay-delete modal-toggle-delete"></div>
+                              <div class="modal-wrapper-delete modal-transition-delete">
+                                <div class="modal-header-delete">
+                                  <h2 class="modal-heading-delete">Xác nhận</h2>
+                                </div>
+                                
+                                <div class="modal-body-delete">
+                                  <div class="modal-content-delete d-flex-ar">
+                                    <button class="modal-toggle-delete btn btn-green w-3" onclick="comfirmDelete(this)">Xác nhận</button>
+                                    <button class="modal-toggle-delete btn btn-danger w-3">Hủy</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="table-pagination d-flex-bw align-center">
+                <div class="table-pagination__title">
+                  <p>
+                    Hiển thị từ 1 đến <span class="render-number">20</span> trong
+                    <span class="total">844</span> bản ghi
+                  </p>
+                </div>
+    
+                <div class="table-pagination__control">
+                  <ul class="pagination">
+                    <li class="to-first-page disable">
+                      <span>Trang đầu</span>
+                    </li>
+    
+                    <li class="back disable">
+                      <span>&laquo;</span>
+                    </li>
+    
+                    <li class="page active">
+                      <a href="#">1</a>
+                    </li>
+    
+                    <li class="page">
+                      <a href="#">2</a>
+                    </li>
+    
+                    <li class="page">
+                      <a href="#">3</a>
+                    </li>
+    
+                    <li class="next">
+                      <span>&raquo;</span>
+                    </li>
+    
+                    <li class="to-last-page">
+                      <span>Trang cuối</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+      </div>
       </div>
     </main>
 

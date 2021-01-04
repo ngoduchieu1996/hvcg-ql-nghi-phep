@@ -25,6 +25,18 @@
   box-shadow: 0 0.3rem 0.3rem #ff9068;
 }
 
+.btn-green {
+  background-image: linear-gradient(to right, #1D976C 0%, #93F9B9  51%, #1D976C  100%);
+  color: #fff !important;
+  box-shadow: 0 0.3rem 0.3rem #1D976C;
+}
+
+.btn-orange {
+  background-image: linear-gradient(to right, #FF8008 0%, #FFC837  51%, #FF8008  100%);
+  color: #fff;
+  box-shadow: 0 0.3rem 0.3rem #FF8008;
+}
+
 .btn-function {
   text-align: center;
 

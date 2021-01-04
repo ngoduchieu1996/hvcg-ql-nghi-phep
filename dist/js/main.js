@@ -440,25 +440,29 @@ function showSearchAdvanced() {
 
 showSearchAdvanced();
 
-$('.modal-toggle').on('click', function(e) {
-  e.preventDefault();
-  $('.modal-check').toggleClass('is-visible');
-});
+function showModal(showCheckModal) {
+  let showModal = showCheckModal.childNodes;
+  $(showModal).toggleClass('is-visible');
+}
 
-function comfirm(){
-  if($('.btn-check').hasClass("checked")){
-    alert('Đã xác nhận');
+function comfirm(btn){
+  let buttonCheck=btn.parentNode.parentNode.parentNode.parentNode.parentNode;
+  if($(buttonCheck).hasClass("checked")){
+    $(buttonCheck).removeClass("checked");
   }
   else
   {
-    $('.btn-check').addClass('checked');
-    alert('Đã xác nhận');
+    $(buttonCheck).addClass('checked');
   } 
 }
 
-function cancel(){
-  if($('.btn-check').hasClass("checked")){
-    $('.btn-check').removeClass("checked");
-    alert('Hủy');
-  }
+function showDeleteModal(showDelete) {
+  let showDeleteModal = showDelete.childNodes;
+  $(showDeleteModal).toggleClass('is-visible');
 }
+
+function comfirmDelete(btn) {
+  let row = btn.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode;
+  row.parentNode.removeChild(row);
+}
+
