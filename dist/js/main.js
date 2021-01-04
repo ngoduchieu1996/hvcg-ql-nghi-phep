@@ -440,3 +440,25 @@ function showSearchAdvanced() {
 
 showSearchAdvanced();
 
+$('.modal-toggle').on('click', function(e) {
+  e.preventDefault();
+  $('.modal-check').toggleClass('is-visible');
+});
+
+function comfirm(){
+  if($('.btn-check').hasClass("checked")){
+    alert('Đã xác nhận');
+  }
+  else
+  {
+    $('.btn-check').addClass('checked');
+    alert('Đã xác nhận');
+  } 
+}
+
+function cancel(){
+  if($('.btn-check').hasClass("checked")){
+    $('.btn-check').removeClass("checked");
+    alert('Hủy');
+  }
+}

@@ -345,11 +345,32 @@
                           <td>Chờ duyệt</td>
       
                           <td class="btn-function d-flex-center align-items-center ">
-                              <input type="checkbox" name="">
-                              </input>
+                            <div class="btn-function-check">
+                              <button class="modal-toggle btn-check">
+                                <i class="fas fa-check-square"></i>
+                              </button>
+                              <div class="modal-check">
+                                <div class="modal-overlay modal-toggle"></div>
+                                <div class="modal-wrapper modal-transition">
+                                  <div class="modal-header">
+                                    <button class="modal-close modal-toggle"><svg class="icon-close icon" viewBox="0 0 32 32"><use xlink:href="#icon-close"></use></svg></button>
+                                    <h2 class="modal-heading">Xác nhận</h2>
+                                  </div>
+                                  
+                                  <div class="modal-body">
+                                    <div class="modal-content d-flex-ar">
+                                      <button class="modal-toggle btn btn-green w-3" onclick="comfirm()">Xác nhận</button>
+                                      <button class="modal-toggle btn btn-danger w-3" onclick="cancel()">Hủy</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="btn-function-delete">
                               <button class="delete">
                                 <i class="fas fa-trash-alt"></i>
                               </button>
+                            </div>
                           </td>
                         </tr>
                       </tbody>
