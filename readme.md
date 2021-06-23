@@ -1,5 +1,3 @@
-# Clone Nhơn-Hoa
-
 **Setting up Sass compile:**
 npm install -g sass
 
